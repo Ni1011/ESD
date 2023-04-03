@@ -1,0 +1,58 @@
+div.main {
+    min-height: 100%;
+    padding: 5% 10%;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+}
+
+h1, h4 {
+    margin: 15px 0 4px;
+    font-weight: 400;
+}
+
+.testbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 3px;
+}
+
+#studentTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+}
+
+#studentTable td, #studentTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#studentTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#studentTable tr:hover {
+    background-color: #ddd;
+}
+
+#studentTable th {
+    padding: 12px 0;
+    background-color: #04AA6D;
+    color: white;
+}
+
+span > i {
+    cursor: pointer;
+}

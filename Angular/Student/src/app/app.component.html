@@ -1,0 +1,11 @@
+<div class="topnav">
+
+  <a class="title">EMPLOYEEAPP</a>
+
+  <a class="nav-item" [ngClass]="{'active': commonService.current_page=='add'}" [routerLink]="['/']">Add Employee</a>
+
+  <a class="nav-item" [ngClass]="{'active': commonService.current_page=='list'}" [routerLink]="['/employees']">Employees List</a>
+
+</div>
+
+<router-outlet></router-outlet>

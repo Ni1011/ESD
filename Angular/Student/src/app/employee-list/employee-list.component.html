@@ -1,0 +1,37 @@
+<div class="main">
+
+    <div class="testbox">
+
+        <table id="studentTable">
+
+            <thead>
+                <tr>
+                    <th> ID </th>
+                    <th> Name </th>
+                    <th> Email </th>
+                    <th> Contact </th>
+                    <!--<th> Job Title </th>-->
+                    <th> Action </th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr *ngFor="let emp of empList; let i=index">
+                    <td> {{ emp.id }} </td>
+                    <td> {{ emp.name }} </td>
+                    <td> {{ emp.email }} </td>
+                   <td> {{ emp.phone }} </td>
+                   <!--  <td> {{ emp.job_title }} </td> -->
+                    <td>
+                        <span><i class="fa fa-pencil-square-o" [routerLink]="['/']"[queryParams]="{id: emp._id}" (click)="commonService.formObj=emp"></i></span>
+                        &nbsp;
+                        <span><i class="fa fa-trash" (click)="onDelete(emp._id)"></i></span>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>

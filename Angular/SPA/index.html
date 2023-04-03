@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+    <script src="module.js"></script>
+</head>
+
+<body>
+    <script type="text/ng-template" id="first">
+        <h1>First Page</h1>
+        <h3>{{message}}</h3>
+    </script>
+
+    <script type="text/ng-template" id="second">
+        <h1>Second Page</h1>
+        <h3>{{message}}</h3>
+    </script>
+
+    <script type="text/ng-template" id="third">
+        <h1>Third Page</h1>
+        <h3>{{message}}</h3>
+    </script>
+    
+    <a href="#/">First</a>
+    <a href="#/second">Second</a>
+    <a href="#/third">Third</a>
+    
+    <div ng-view></div>
+</body>
+
+</html>

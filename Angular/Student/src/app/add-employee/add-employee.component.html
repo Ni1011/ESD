@@ -1,0 +1,32 @@
+<div class="main">
+
+    <div class="testbox">
+
+        <form action="/">
+
+            <h1>Add Student Form</h1>
+
+            <h4>Employee ID<span>*</span></h4>
+            <input type="text" name="id" [(ngModel)]="formObj.id" />
+
+            <h4>Name<span>*</span></h4>
+            <input type="text" name="name" [(ngModel)]="formObj.name" />
+
+            <h4>Email Address<span>*</span></h4>
+            <input type="text" name="email" [(ngModel)]="formObj.email" />
+
+            <h4>Contact Number<span>*</span></h4>
+            <input type="number" name="phone" [(ngModel)]="formObj.phone" />
+
+            <!-- <h4>Job Title</h4>
+            <input type="text" name="job_title" [(ngModel)]="formObj.job_title" /> -->
+
+            <div class="btn-block">
+                <button type="submit" (click)="onSubmit()">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
